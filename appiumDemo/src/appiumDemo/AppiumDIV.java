@@ -20,6 +20,7 @@ public class AppiumDIV extends AppiumMUL{
 	driver.findElement(By.id(Constant.SUMOPDIV)).click();
 	driver.findElement(By.id(Constant.SUMDIGIT2)).click();
 	driver.findElement(By.id(Constant.SUMOPEQUAL)).click();
+	//driver.findElement(By.id(Constant.SUMOPEQUAL)).click();
 	Divres=driver.findElement(By.className(Constant.CALCDISPLAY)).getText();
 	System.out.println("Result is:"+ Divres);
 	assert Divres.equals("1 point 5");
